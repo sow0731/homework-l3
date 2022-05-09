@@ -9,10 +9,10 @@ import java.time.LocalDateTime;
 @Controller
 public class HelloWorldController {
 
-@GetMapping("helloworld")
-public String hello(ModelMap modelMap) {
-    modelMap.addAttribute("message", "HelloWorld");
-    modelMap.addAttribute("time", LocalDateTime.now().toString());
-    return "helloworld";
-}
+    @GetMapping("helloworld")
+    public String hello(ModelMap modelMap) {
+        modelMap.addAttribute("message", "HelloWorld");
+        modelMap.addAttribute("time", LocalDateTime.now().toString());
+        return "helloworld";
+    }
 }
